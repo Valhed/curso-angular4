@@ -2,5 +2,16 @@
     Welcome to {{ title }}!
   </h1>
   <hr>
-<app-empleado-tag></app-empleado-tag>
+<nav>
+  <a [routerLink]="['/home']">Home</a>
+  -
+  <a [routerLink]="['/fruta']">Fruta</a>
+  -
+  <a [routerLink]="['/empleado']">Empleado</a>
+  -
+  <a [routerLink]="['/contacto']">Contacto</a>
+</nav>
+
+
+  <router-outlet></router-outlet>
 
